@@ -2,11 +2,11 @@ import pandas as pd
 
 #### VARIABLES TO BE SET ####
 
-file_adress = 'C:/folder/foler/filename.csv' ### specify the file path on your local hard drive (file should be downloaded from the PKW www: https://wybory.gov.pl/sejmsenat2023/data/csv/kandydaci_sejm_csv.zip (19.10.2023))
-columns_to_import = ['OkregId', 'ListaId', 'NazwaKomitetu', 'Glosy', 'IsMandat'] ### Column names should exactly match the function's parameter names (modify the column names in the file 'Nr okręgu' - 'ListaId', 'Nr listy' - 'ListaId', 'Pozycja na liście' - 'PozycjaNaLiscie', 'Nazwa komitetu' - 'NazwaKomitetu', 'Liczba głosów' - 'Glosy')
-oposition_parties_ids_list = [2,3,6] ### provide a list of opposition parties IDs 
-pis_id = 4 ### provide PRAWO I SPRAWIEDLIWOSC ID number
-konf_id = 5 ### provide KONFEDERACJA ID number
+file_adress = 'C:/folder/foler/filename.csv' #Specify the file path on your local hard drive (file should be downloaded from the PKW www: https://wybory.gov.pl/sejmsenat2023/data/csv/kandydaci_sejm_csv.zip (19.10.2023))
+columns_to_import = ['OkregId', 'ListaId', 'NazwaKomitetu', 'Glosy', 'IsMandat'] #Column names should exactly match the function's parameter names (modify the column names in the file 'Nr okręgu' - 'OkregId', 'Nr listy' - 'ListaId', 'Pozycja na liście' - 'PozycjaNaLiscie', 'Nazwa komitetu' - 'NazwaKomitetu', 'Liczba głosów' - 'Glosy')
+oposition_parties_ids_list = [2,3,6] #Provide a list of opposition parties IDs 
+pis_id = 4 #Provide PRAWO I SPRAWIEDLIWOSC ID number
+konf_id = 5 #Provide KONFEDERACJA ID number
 
 #### END OF SETTING VARIABLES ####
 
