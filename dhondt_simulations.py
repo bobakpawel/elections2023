@@ -2,7 +2,7 @@ import pandas as pd
 
 #### VARIABLES TO BE SET ####
 
-file_adress = 'C:/badania/wgrane/kandydaci_sejm_2023.csv' #Specify the file path on your local hard drive (file should be downloaded from the PKW www: https://wybory.gov.pl/sejmsenat2023/data/csv/kandydaci_sejm_csv.zip (19.10.2023))
+file_adress = 'C:/folder/folder/file_name.csv' #Specify the file path on your local hard drive (file should be downloaded from the PKW www: https://wybory.gov.pl/sejmsenat2023/data/csv/kandydaci_sejm_csv.zip (19.10.2023))
 columns_to_import = ['OkregId', 'ListaId', 'NazwaKomitetu', 'Glosy','IsMandat'] #Column names should exactly match the function's parameter names (modify the column names in the file 'Nr okręgu' - 'OkregId', 'Nr listy' - 'ListaId', 'Nazwa komitetu' - 'NazwaKomitetu', 'Liczba głosów' - 'Glosy')
 
 #### END OF SETTING VARIABLES ####
