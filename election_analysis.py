@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib as plt
 import re #importing libraries: pandas, numpy, matplotlib and re
 
-file_path = 'C:/badania/wgrane/kandydaci_sejm_2023_b.csv'
+file_path = 'C:/folder/folder/file.csv'
 columns_to_import = ['OkregId', 'ListaId', 'PozycjaNaLiscie', 'NazwaKomitetu',
                      'NazwiskoImiona', 'Glosy', 'ProcentGlosowListy', 'ProcentGlosowOkregu', 'IsMandat']
 candidates = pd.read_csv(file_path, encoding='cp1250', sep=';', usecols = columns_to_import) #Loading the file using variables for the file path and columns to import (column names may need to be changed in, for example, Excel, or uploaded here without using the usecol parameter, and then renamed).
