@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np 
 import matplotlib as plt #libraries import 
 
-electoral_comm_an = pd.read_csv('C:/badania/obwody_2023.csv', sep = ';', encoding='utf-8', usecols = ['KomisjaID', 'Siedziba', 'Gmina', 'Wojewodztwo', 'Uprawnieni', 'OkregID', 'WydaneKarty', 'Zaswiadczenie', 'KartyWyjete', 'KartyNiewazne', 'KartyWazne', 'GlosyNiewazne', 'WieleX', 'BrakX', 'GlosyWazne', 'PIS', 'KO', 'TRZECIADROGA', 'NOWALEWICA', 'KONFEDERACJA']) #This section of the code handles data loading and initial data column selection.
+electoral_comm_an = pd.read_csv('C:/folder/file.csv', sep = ';', encoding='utf-8', usecols = ['KomisjaID', 'Siedziba', 'Gmina', 'Wojewodztwo', 'Uprawnieni', 'OkregID', 'WydaneKarty', 'Zaswiadczenie', 'KartyWyjete', 'KartyNiewazne', 'KartyWazne', 'GlosyNiewazne', 'WieleX', 'BrakX', 'GlosyWazne', 'PIS', 'KO', 'TRZECIADROGA', 'NOWALEWICA', 'KONFEDERACJA']) #This section of the code handles data loading and initial data column selection.
 
 electoral_comm_an['Gmina'].fillna('EmptyFiller', inplace = True)
 electoral_comm_an['Wojewodztwo'].fillna('zagranica', inplace = True) #Replacing empty fields in the 'Wojewodztwo' column with the value: 'zagranica'. This ensures that foreign electoral commissions can be easily identified when needed.
